@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_clean_architecture_with_mvvm/presentation/theme_manager.dart';
+import 'package:flutter_clean_architecture_with_mvvm/presentation/resources/routes_manager.dart';
+import 'package:flutter_clean_architecture_with_mvvm/presentation/resources/theme_manager.dart';
 
 class MyApp extends StatelessWidget {
   MyApp._internal();
@@ -12,6 +13,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      onGenerateRoute: RouteGenerator.getRoute,
+      initialRoute: Routes.splashRoute,
       theme: applicationTheme,
     );
   }
