@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_clean_architecture_with_mvvm/presentation/resources/color_manager.dart';
-import 'package:flutter_clean_architecture_with_mvvm/presentation/resources/font_manager.dart';
-import 'package:flutter_clean_architecture_with_mvvm/presentation/resources/styles_manager.dart';
-import 'package:flutter_clean_architecture_with_mvvm/presentation/resources/values_manager.dart';
+import 'package:flutter_clean_architecture_with_mvvm/resources/color_manager.dart';
+import 'package:flutter_clean_architecture_with_mvvm/resources/font_manager.dart';
+import 'package:flutter_clean_architecture_with_mvvm/resources/styles_manager.dart';
+import 'package:flutter_clean_architecture_with_mvvm/resources/values_manager.dart';
 
 ThemeData get applicationTheme {
   return ThemeData(
@@ -54,8 +54,12 @@ ThemeData get applicationTheme {
         color: ColorManager.darkGrey,
         fontSize: FontSize.s16,
       ),
+      headlineMedium: getRegularStyle(
+        color: ColorManager.grey,
+        fontSize: AppSize.s14,
+      ),
       titleMedium: getMediumStyle(
-        color: ColorManager.lightGrey,
+        color: ColorManager.primary,
         fontSize: FontSize.s14,
       ),
       bodySmall: getRegularStyle(

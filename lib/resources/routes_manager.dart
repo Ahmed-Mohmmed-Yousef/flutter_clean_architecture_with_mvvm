@@ -4,7 +4,7 @@ import 'package:flutter_clean_architecture_with_mvvm/presentation/login/login_vi
 import 'package:flutter_clean_architecture_with_mvvm/presentation/main/main_view.dart';
 import 'package:flutter_clean_architecture_with_mvvm/presentation/onboarding/onboarding.dart';
 import 'package:flutter_clean_architecture_with_mvvm/presentation/register/register_view.dart';
-import 'package:flutter_clean_architecture_with_mvvm/presentation/resources/strings_manager.dart';
+import 'package:flutter_clean_architecture_with_mvvm/resources/strings_manager.dart';
 import 'package:flutter_clean_architecture_with_mvvm/presentation/splash/splash_view.dart';
 import 'package:flutter_clean_architecture_with_mvvm/presentation/store_details/store_details_view.dart';
 
